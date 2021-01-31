@@ -1,0 +1,866 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+
+    width: 1300px;
+    padding: 0 50px;
+    margin: 0 auto;
+}
+
+@media (min-width:576px){
+    .container{
+        max-width: 540px;
+    }
+}
+
+@media (min-width:768px){
+    .container{
+        max-width: 720px;
+    }
+}
+
+@media (min-width:992px){
+    .container{
+        max-width: 960px;
+    }
+}
+
+@media (min-width:1200px){
+    .container{
+        max-width: 1300px;
+    }
+}
+
+/* HEADER */
+header.topbar{
+    background: white;
+}
+
+header.topbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header.topbar .container .icons{
+    display: flex;
+}
+
+.search {
+    margin-right: 27px;
+}
+
+/* Can also built utility class for display flex - justfy content: space-between -align items: center  */
+
+/* .flex{
+    display: flex;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.items-center{
+    align-items: center;
+} */
+
+/* BANNER */
+
+section.banner{
+    width: 100%;
+    height: 637px;
+    position: relative;
+}
+
+section.banner .container .banner-background{
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: 311px;
+}
+section.banner .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+
+section.banner .container .left_banner h1{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 65px;
+}
+
+section.banner .container .left_banner p{
+    margin-top: 27px;
+    font-style: normal;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px; 
+    color: #6D6D6D;
+}
+
+section.banner .container .left_banner button{
+    width: 132px;
+    height: 32px;
+    margin-top: 38px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    background: none;
+    border: 0;
+    border-bottom: 2px solid black;
+}
+
+section.banner .container .left_banner button:hover{
+    background: aliceblue;
+    color:rgb(59, 114, 177);
+}
+
+section.banner .container .right_banner img{
+    position: relative;
+    margin: 0 auto;
+    display: block;
+}
+
+/* SERVICES */
+
+section.Services{
+    width: 100%;
+    height: 1037px;
+    position: relative;
+}
+
+.leaf{
+    position: absolute;
+}
+.leaf img{
+    width: 150px;
+}
+.left-leaf {
+    left: -53px;
+    top: 0;
+}
+.right-leaf{
+    bottom: 60px;
+    right: -42px;
+}
+
+section.Services .container .inner-upper-service{
+    margin: 0 auto;
+    width: 610px;
+    height: 230px;
+    margin-top: 65px;
+}
+
+section.Services .container .inner-upper-service img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+section.Services .container .inner-upper-service h1{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    margin-top: 48px;
+}
+
+section.Services .container .inner-upper-service p{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 27.86px;
+    color: #6D6D6D;
+    margin-top: 24px;
+}
+
+section.Services .container .treatments{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 1178px;
+    height: 466px;
+    margin-top: 65px;
+    /* text-align: -webkit-center; */
+}
+
+section.Services .container .treatments .advance h3{
+    padding-top: 28px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+section.Services .container .treatments .babor h3{
+    padding-top: 28px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+section.Services .container .treatments .professional h3{
+    padding-top: 28px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+section.Services .container .treatments .eye h3{
+    padding-top: 28px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+section.Services{
+    background-image: url(/images/leaf_left.png);
+    background-size: 308.21px 274.79px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+
+section.Services{
+    background-image: url(/images/leaf_right.png);
+    background-size: 319.4px 284.77px;
+    overflow: hidden;
+    /* background-position: ; */
+    background-repeat: no-repeat;
+}
+
+section.Services .container .inner-lower-service-button button{
+    width: 132px;
+    height: 32px;
+    margin-top: 73px;
+    font-family: 'Montserrat', sans-serif;
+    background: none;
+    border: 0;
+    font-weight: 700;
+    border-bottom: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;   
+}
+
+section.Services .container .inner-lower-service-button button:hover{
+    background: aliceblue;
+    color:rgb(59, 114, 177);
+}
+
+/* About_Us */
+
+section.About_Us{
+    background-image: url(/images/about_us.png);
+    overflow: hidden;
+    background-repeat: no-repeat;
+    /* background-size: 1400px 602px;   */
+    background-size: cover;
+    background-position: center;
+    height: 602px;
+} 
+
+section.About_Us .container {
+    display: block;
+    align-items: center;
+
+}
+section.About_Us .container h1{
+    margin-left: 109px;
+    margin-top: 138px; 
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+section.About_Us .container .about{
+    display: flex;
+    justify-content:space-around;
+}
+
+section.About_Us .container .about p.left {
+    margin-left: 16px;
+    margin-top: 20.29px;
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 34.5px;
+}
+section.About_Us .container .about p.left span{
+    color: #6D6D6D;
+}
+section.About_Us .container .about p.right{
+    font-style: normal;
+    margin-top: 20.29px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 27.86px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+section.About_Us .container button{
+    width: 132px;
+    height: 32px;
+    margin-top: 18.36px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    background: none;
+    border: 0;
+    border-bottom: 2px solid black;
+    float: right;
+    margin-right: 365px;
+}
+
+/* GIFT-CARD */
+
+section.Gift-Card{
+    width: 100%;
+    height: 829px;
+}
+
+section.Gift-Card .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.Gift-Card .container .left-gift h1{
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    margin-top: 228px; 
+}
+
+section.Gift-Card .container .left-gift p{
+    
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #6D6D6D;
+    margin-top: 31px;
+}
+
+section.Gift-Card .container .left-gift button{
+    width: 132px;
+    height: 32px;
+    margin-top: 61px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    background: none;
+    border: 0;
+    border-bottom: 2px solid black;
+}
+
+section.Gift-Card .container .right-gift img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 165px;
+}
+
+/* TESTIMONIAL */
+
+section.testimonials{
+    padding-top: 121px;
+    padding-bottom: 137px;
+    background-color: #F5F5F5;
+    height: 553px;
+}
+
+section.testimonials .container img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 9px;
+}
+
+section.testimonials .container h1{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    margin-top: 48px;
+}
+
+section.testimonials .container .slider .testimonial-slider .text-written p{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 36px;
+    color: #6D6D6D;
+    margin-top: 32px;
+}
+
+section.testimonials .container .slider .testimonial-slider .text-written h3{
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25.5px;
+    margin-top: 15px;
+}
+
+.testimonials .btn{
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: none;
+    border-radius: 4px;
+    -webkit-border-radius:4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    margin-top: -60px;
+    cursor: pointer;
+    outline: none;
+
+}
+
+.right-slider{
+    position: absolute;
+    top: 46%;
+    right: 0rem; 
+    z-index: 1;
+}
+.left-slider{
+    position: absolute;
+    top: 46%;
+    /* left: -3rem; */
+    z-index: 1;
+}
+.testimonials .slider{
+    position: relative;
+}
+
+/* CONTACT-US */
+
+section.Contact-Us{
+    width: 100%;
+    height: 654px;
+    position: relative;
+}
+section.Contact-Us .contact-leaf{
+    position: absolute;
+    top: 160px;
+    left: -69px;
+}
+
+section.Contact-Us .container .Contact-Row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 137px;
+    margin-left: 30px;
+    margin-right: auto;
+    /* display: block; */
+    width: 1138px;
+    height: 443px;
+}
+
+.left-contact {
+    margin-top: -185px;
+}
+
+section.Contact-Us .container .Contact-Row .left-contact h4{
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25.5px;
+    margin-top: 160.34px;
+    color: #6D6D6D;
+    margin-top: 47px;
+}
+
+section.Contact-Us .container .left-contact h1{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: black;
+    margin-top: 16px;
+}
+
+section.Contact-Us .container .left-contact p{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27.86px;
+    color: #6D6D6D;
+    margin-top: 24.66px;
+}
+
+section.Contact-Us .container .left-contact img{
+    margin-top: 25.5px;
+}
+
+section.Contact-Us .container .right-contact .form{
+    width: 570px;
+    height: 433px;
+}
+
+section.Contact-Us .container .right-contact .form .name .name-heading{
+    display: flex;
+}
+
+section.Contact-Us .container .right-contact .form .name .name-input{
+    display: flex;
+}
+
+section.Contact-Us .container .right-contact .form .email .email-heading{
+    display: flex;
+}
+
+section.Contact-Us .container .right-contact .form .message .message-heading{
+    display: flex;
+}
+
+section.Contact-Us .container .right-contact .form .name .name-heading h4{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 28px;
+    color: #6D6D6D;
+}
+
+section.Contact-Us .container .right-contact .form .name .name-heading img{
+    margin-left: 7px;
+    margin-top: 4px;
+}
+
+section.Contact-Us .container .right-contact .form .name .name-input .first-name .firstlabel{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    color: #6D6D6D;
+}
+section.Contact-Us .container .right-contact .form .name .name-input .first-name .first-name-input{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    background: #FAFAFA;
+    border: 1px solid #EAEAEA;
+    box-sizing: border-box;
+    border-radius: 2px;
+    width: 274px;
+    height: 44px;
+}
+
+section.Contact-Us .container .right-contact .form .name .name-input .last-name .lastlabel{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    color: #6D6D6D;
+}
+
+section.Contact-Us .container .right-contact .form .name .name-input .last-name .last-name-input{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    background: #FAFAFA;
+    border: 1px solid #EAEAEA;
+    box-sizing: border-box;
+    border-radius: 2px;
+    width: 274px;
+    height: 44px;
+}
+
+section.Contact-Us .container .right-contact .form .name .name-input .last-name{
+    margin-left: 22.8px;
+}
+
+section.Contact-Us .container .right-contact .form .email .email-heading h4{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 28px;
+    color: #6D6D6D;
+    margin-top: 9.84px;
+}
+
+section.Contact-Us .container .right-contact .form .email .email-input .email-name-input{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    background: #FAFAFA;
+    border: 1px solid #EAEAEA;
+    box-sizing: border-box;
+    border-radius: 2px;
+    width: 570px;
+    height: 44px;
+}
+
+section.Contact-Us .container .right-contact .form .message .message-heading h4{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 28px;
+    color: #6D6D6D;
+    margin-top: 9.34px;
+}
+
+section.Contact-Us .container .right-contact .form .message .message-input .message-name-input{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    background: #FAFAFA;
+    border: 1px solid #EAEAEA;
+    box-sizing: border-box;
+    border-radius: 2px;
+    width: 570px;
+    height: 120px;
+}
+section.Contact-Us .container .right-contact .form .email .email-heading img{
+    margin-left: 7px;
+    margin-top: 4px;
+}
+
+section.Contact-Us .container .right-contact .form .message .message-heading img{
+    margin-left: 7px;
+    margin-top: 4px;
+
+}
+
+section.Contact-Us .container .right-contact .form button{
+    width: 80px;
+    height: 27px;
+    margin-top: 29px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    background: none;
+    border: 0;
+    border-bottom: 2px solid black;
+}
+
+
+/* FOOTER */
+
+.Footer{
+    width: 100%;
+    height: 929px;
+    background-color: #F5F5F5;
+    
+}
+
+/* .Footer .container .inner-footer{
+    width: 1240px;
+    height: 929px;
+    display: block;
+    justify-content: center;
+} */
+.Footer .container .inner-footer .top-footer{
+    margin-left: auto;
+    margin-right: auto;
+    /* align-items: center; */
+    justify-content: center;
+    padding-top: 55px;
+    width: 475px;
+    height: 405px;
+}
+
+.Footer .container .inner-footer .top-footer img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Footer .container .inner-footer .top-footer h1{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    color:black;
+    margin-top: 70px;
+}
+
+.Footer .container .inner-footer .top-footer p{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    color:#6D6D6D;
+    margin-top: 28.66px;
+}
+.Footer .container .inner-footer .top-footer p span{
+    font-weight: 700;
+}
+.Footer .container .inner-footer .top-footer button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 134px;
+    height: 30px;
+    margin-top: 36px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    background: none;
+    border: 0;
+    border-bottom: 2px solid black;
+}
+
+
+
+.Footer .container .inner-footer .middle-footer{
+    width: 1200px;
+    height: 302px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 170px;
+}
+
+.Footer .container .inner-footer .middle-footer .middle-footer-left h3{
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color:black;
+}
+
+.Footer .container .inner-footer .middle-footer .middle-footer-left p{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 28px;
+    color:#6D6D6D;
+    margin-top: 28px;
+}
+
+.Footer .container .inner-footer .middle-footer .middle-footer-left button{
+    width: 95px;
+    height: 12px;
+    margin-top: 22px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    line-height: 12px;
+    text-align: center;
+    background: none;
+    border: 0;
+}
+
+.middle-footer-left {
+    margin-left: 33px;
+}
+
+.Footer .container .inner-footer .middle-footer .middle-footer-middle h3{
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color:black;
+    text-align: center;
+}
+
+.Footer .container .inner-footer .middle-footer .middle-footer-middle .face-insta-you{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.youtube{
+    margin: 0 9px;
+}
+
+
+.Footer .container .inner-footer .middle-footer .middle-footer-right h3{
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color:black;
+} 
+
+.Footer .container .inner-footer .middle-footer .middle-footer-right .middle-footer-right-label{
+    width: 345px;
+    height: 44px;
+    margin-top: 35px;
+    border: 0;
+}
+
+.Footer .container .inner-footer .middle-footer .middle-footer-right button{
+    width: 102px;
+    height: 52px;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 2px;
+    text-align: center;
+    background: none;
+    border: 0;
+    border-bottom: 2px solid black;
+
+}
+
+.Footer .container .inner-footer .end-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Footer .container .inner-footer .end-footer .left{
+    color: #6D6D6D;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 28px;
+}
+
+.Footer .container .inner-footer .end-footer .right{
+    color: #6D6D6D;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 28px;
+}
